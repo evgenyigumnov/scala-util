@@ -2,7 +2,7 @@
 
 ## Usage of library
 
-    import com.igumnov.util._
+    import com.igumnov.scalautil._
 
 ## Printing to stdout
 

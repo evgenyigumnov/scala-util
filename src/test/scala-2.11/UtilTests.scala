@@ -1,11 +1,11 @@
-package com.igumnov.util.test
+package com.igumnov.scalautil.test
 
 import org.scalatest._
 
 class UtilTests  extends FlatSpec with Matchers {
 
   "Test" should "Ok" in {
-    import com.igumnov.util._
+    import com.igumnov.scalautil._
 
 
     "\"test1\".println" should compile

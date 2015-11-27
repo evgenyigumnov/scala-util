@@ -1,5 +1,5 @@
 package com.igumnov
-package object util {
+package object scalautil {
 
   implicit class StringImprovements(s: String) {
     def println:Unit = Predef.println(s)
