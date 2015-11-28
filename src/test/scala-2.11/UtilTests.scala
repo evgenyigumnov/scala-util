@@ -7,10 +7,8 @@ class UtilTests  extends FlatSpec with Matchers {
   "Test" should "Ok" in {
     import com.igumnov.scalautil._
 
-
     "\"test1\".println" should compile
     "\"test2\".print" should compile
-
 
 
     val arrayList = JArrayList[String]

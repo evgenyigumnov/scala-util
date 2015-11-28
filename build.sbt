@@ -9,6 +9,19 @@ scalaVersion := "2.11.7"
 
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
 
+publishTo := {
+  val nexus = "https://oss.sonatype.org/"
+  if (isSnapshot.value)
+    Some("snapshots" at nexus + "content/repositories/snapshots")
+  else
+    Some("releases" at nexus + "service/local/staging/deploy/maven2")
+}
+
+publishMavenStyle := true
+
+publishArtifact in Test := false
+
+pomIncludeRepository := { _ => false }
 
 pomExtra := {
   <url>https://github.com/evgenyigumnov/scala-util</url>
@@ -27,6 +40,7 @@ pomExtra := {
       <developer>
         <name>Evgeny Igumnov</name>
         <email>igumnov@gmail.com</email>
+        <url>http://evgeny.igumnov.com</url>
       </developer>
     </developers>
 }

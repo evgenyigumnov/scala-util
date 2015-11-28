@@ -2,8 +2,8 @@ package com.igumnov
 package object scalautil {
 
   implicit class StringImprovements(s: String) {
-    def println:Unit = Predef.println(s)
-    def print:Unit = Predef.print(s)
+    def println = Predef.println(s)
+    def print = Predef.print(s)
   }
 
   type JList[T] = java.util.List[T]
