@@ -1,6 +1,6 @@
 name := "scala-util"
 
-version := "0.1"
+version := "0.2"
 
 organization := "com.igumnov.scalautil"
 
@@ -16,6 +16,7 @@ publishTo := {
   else
     Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
+//publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))
 
 publishMavenStyle := true
 

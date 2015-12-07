@@ -10,6 +10,8 @@ package object scalautil {
 
   type JArrayList[T] = java.util.ArrayList[T]
 
+
+
   object JArrayList {
     def apply[T] = new JArrayList[T]
   }
@@ -21,6 +23,15 @@ package object scalautil {
 
   object JHashtable {
     def apply[A,B] = new JHashtable[A,B]
+  }
+
+
+  type JSet[T] = java.util.Set[T]
+
+  type JHashSet[T] = java.util.HashSet[T]
+
+  object JHashSet {
+    def apply[A] = new JHashSet[A]
   }
 
 

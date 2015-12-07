@@ -17,6 +17,10 @@ class UtilTests  extends FlatSpec with Matchers {
     val hashTable = JHashtable[String,String]
     hashTable.isInstanceOf[java.util.Hashtable[String,String]] should be (true)
 
+    val hashSet = JHashSet[String]
+    hashSet.isInstanceOf[java.util.HashSet[String]] should be (true)
+
+
   }
 
 }
